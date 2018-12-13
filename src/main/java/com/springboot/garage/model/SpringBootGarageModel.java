@@ -46,6 +46,18 @@ public class SpringBootGarageModel implements Serializable{
 	@LastModifiedDate
 	private Date lastModified;
 
+	public SpringBootGarageModel() {
+		
+	}
+	
+	public SpringBootGarageModel(String vehicleType, String model, String manufacturer, String colour, String registration) {
+		this.vehicleType = vehicleType;
+		this.model = model;
+		this.manufacturer = manufacturer;
+		this.colour = colour;
+		this.registration = registration;
+	}
+
 	public Long getId() {
 		return id;
 	}
